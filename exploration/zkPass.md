@@ -9,11 +9,15 @@ Zkpass is a privacy protocol for private data based on Multi-Party Computation (
 
 
 ZkPass's latest funding round was on Aug 03, 2023
+
 August 3rd, 2023, New York, US, — zkPass, a privacy-preserving protocol for private data verification, has secured a $2.5 million seed round. The funding saw substantial participation from renowned investors, including Sequoia China, Binance Labs, OKX Ventures, dao5, SIG DT Investments, Inc., Leland Ventures, Cypher Capital, Blockchain Founders Fund, and others.
 
 Founded Year: 2022
+
 Location: Sydney, Australia
-Company Stage: Seed
+
+Company Stage: See
+
 Total Funding: $2.5M
 
 ## Who created ZkPass?
@@ -21,27 +25,68 @@ Total Funding: $2.5M
 There are two co-founder of ZkPass
 
 Joshua Peng, Co-Founder at ZkPass:
+
 [Joshua P Linkedin](https://www.linkedin.com/in/joshua-p-466504257/ "Joshua P Linkedin")
+
 Education:
+
 University of Missouri-Columbia
+
 Doctor of Philosophy - PhD, Structural Engineering
+
 Oca 2012 - Tem 2015
 
 
 Bing J, Co-Founder at ZkPass:
+
 [Bing J Linkedin](https://www.linkedin.com/in/zkbing/ "Bing J Linkedin")
+
 Education:
-南开大学南开大学
-Master's degree, Software Engineering
-Eyl 2007 - Haz 2010
 
 南开大学南开大学
+
+Master's degree, Software Engineering
+
+Eyl 2007 - Haz 2010
+
+
+南开大学南开大学
+
 Bachelor's degree, Software Engineering
+
 Eyl 2003 - Haz 2007
 
 
 
 ## Who are using ZkPass?
+
+The provided use cases by the zkPass:
+
+zkKYC
+
+an decentralized authentication solution that verifies your legal identity without requiring file uploads or the over-disclosure of private information.
+---
+
+un­der­col­lat­er­al­ized defi lend­ing pro­to­col
+
+a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access to lower collateralized borrowing opportunities, increasing capital efficiency.
+---
+
+health­care zk-data mar­ket­place
+
+a private healthcare data marketplace that allows users to selectively disclose trusted healthcare data to earn rewards.
+---
+
+de­cen­tral­ized job mar­ket­place
+
+a decentralized freelance marketplace that allows users to secure remote work opportunities by privately disclosing some of their trusted data through zkpass. a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access.
+---
+
+in­sur­ance claims
+
+generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.
+
+
 
 ## Why should we use ZkPass?
 
