@@ -82,6 +82,31 @@ generate zero-knowledge proofs from private data during a web session and submit
 # How does ZkPass work?
 ![ZkPass Overall Architecture](https://2254424488-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FC2Jh1oquOpJPfwzD3x9L%2Fuploads%2FLMF0EDjIw8EJM71LSmnD%2FOverall%20Architecture%20-%20zkPass%20(1).png?alt=media&token=e78e6e3c-aa78-4de2-88bf-00e68ce5b6e5  "ZkPass Overall Architecture")
 
+### Overall
+zkPass primarily employs technologies such as Three-Party TLS (3P-TLS), Multi-party Secure Computation (MPC), and Zero-Knowledge Proof (ZKP). These technologies enable provers to convert any private data from HTTPS websites into zk proofs. At the same time, they ensure privacy protection and prevent data forgery by malicious users.<br><br>
+### Data Layer 
+This describes the various types of data sources that the zkPass Protocol is capable of handling, including public on-chain data and any off-chain private data secured by HTTPS. The zkPass Protocol then generates identity credentials by processing data according to the data persistence protocol and homomorphic encryption data lake standard.<br><br>
+### Protocol Layer 
+Contains the most important three sub-protocol modules implemented by zkPass Protocol, namely<br>
+Oblivious TLS Protocol: implements an efficient 3-party TLS protocol, and supports both CBC and GCM block cipher modes;<br>
+MPC Protocol: implements a data exchange protocol with low communication cost and encapsulates it as a component to provide external privacy computing services; <br>
+ZKP Protocol: implements a memory-friendly zero-knowledge proof protocol, and provides two API methods to empower the Web3 privacy ecosystem.<br><br>
+
+### Network Layer 
+Contains the blockchain network that zkPass Protocol can support, and the main contract modules involved in the protocol, which are<br>
+Task: task distribution smart contract;<br>
+Template: support data source smart contracts;<br>
+ZK-Verification: Zero-knowledge verification of smart contracts.<br><br>
+### Identity Layer 
+Authenticated users will end up with a series of sovereign data, including <br>
+zkSBT: represents participation in certain types of identity authentication activities and ZK proof for privacy verification;<br>
+typeSBT: represents a certain type of identity authentication activities participated in;<br> 
+dateSBT: represents that the identity comes from a trusted data source; <br>
+mainClaim: represents the main claim about the identity; <br>
+queryClaim: represents the secondary claim included in mainClaim.<br><br>
+### Product Layer 
+The user's sovereign data represents various identities in the Web3 ecosystem, which can be applied across different Web3 and Web2 application scenarios.<br>
+Integrating or building on top of the zkPass Protocol, zkPass Products with unique features will be developed to adapt to specific application scenarios.<br><br>
 
 # How does it handle security and privacy concerns?
  
