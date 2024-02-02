@@ -68,15 +68,23 @@ A decentralized freelance marketplace that allows users to secure remote work op
 ### In­sur­ance claims<br>
 Generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.<br><br>
 
-# Who are using ZkPass?
+# How does ZkPass work?
 
 Currently, in order to use zkpass, users need to download an extension called [ZkPass Transgate](https://chromewebstore.google.com/detail/zkpass-transgate/afkoofjocpbclhnldmmaphappihehpma?utm_source=ext_app_menu "ZkPass Transgate").
 
 ![ZkPass Dashboard](https://miro.medium.com/v2/resize:fit:1400/1*lDtRjHstbVnD3-2BIjgWuA.png  "ZkPass Dashboard")
-This is zkpass dashboard 
+ZkPass currently at pre-alpha stage. This image shows zkpass app dashboard.<br>
+Templates show possible zkSBT's like having an instagram account over 100 followers.<br>
+For this instance, there are 3 main steps for an user to proof his/her instagram account has over 100 followers and mint corresponding zero knowledge soul bound token:
+- 1. User need to chose a field that want to Verify
+    There are some trusted datasource offered in zkpass default template, user should chose and fill in the statement.<br> Moreover, ZkPass encourage users to apply more datasource and template by contributor programme.
+- 2. Access to your datasource
+    After Installing zkSBT tool kit, user will be asked to login his/her account to the specific website.
+- 3. Verify & Mint zkSBT
+    The field user would like to prove will be mint as a SBT by multi-party computing & zero-knowledge proof.
 
 
-# How does ZkPass work?
+# What is ZkPass Architecture?
 ![ZkPass Overall Architecture](https://2254424488-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FC2Jh1oquOpJPfwzD3x9L%2Fuploads%2FLMF0EDjIw8EJM71LSmnD%2FOverall%20Architecture%20-%20zkPass%20(1).png?alt=media&token=e78e6e3c-aa78-4de2-88bf-00e68ce5b6e5  "ZkPass Overall Architecture")
 
 ### Overall
