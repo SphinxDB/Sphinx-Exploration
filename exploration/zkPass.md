@@ -217,8 +217,10 @@ The final constraint signifies that the data contained within R must adhere to s
 
 # How much is it related with Sphinx?
 
-At Protocol Layer Sphinx and ZkPass uses TLS and ZKP in common. ZkPass uses a reconstructed version of TLS called 3P-TLS. 
-ZkPass uses interactive ZK's
+
+Both Sphinx and zkPass use TLS at the Protocol Layer. TLS is a widely used protocol for secure communication over a computer network. ZkPass uses a reconstructed version of TLS called Three-Party TLS (3P-TLS).<br>
+
+While both protocols use ZKPs, zkPass employs interactive Zero-Knowledge Proofs (IZK) in its architecture. On the other hand, Sphinx uses ZK-Starks. ZK-Starks are a type of non-interactive Zero-Knowledge Proofs that offer certain advantages over interactive counterparts, such as simplicity and the absence of the need for back-and-forth communication.
 
 
 ## Resources
