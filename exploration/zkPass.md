@@ -25,12 +25,11 @@ Total Funding: $2.5M
 There are two co-founder of ZkPass
 
 Joshua Peng, Co-Founder at ZkPass:<br>
-[Joshua P Linkedin](https://www.linkedin.com/in/joshua-p-466504257/ "Joshua P Linkedin")
-
+[Joshua P Linkedin](https://www.linkedin.com/in/joshua-p-466504257/ "Joshua P Linkedin")<br>
 Education:<br>
 University of Missouri-Columbia<br>
 Doctor of Philosophy - PhD, Structural Engineering<br>
-Oca 2012 - Tem 2015
+Oca 2012 - Tem 2015<br><br>
 
 
 
@@ -52,22 +51,22 @@ Eyl 2003 - Haz 2007
 The provided use cases by the zkPass:
 
 ### ZkKYC<br>
-an decentralized authentication solution that verifies your legal identity without requiring file uploads or the over-disclosure of private information.<br><br>
+An decentralized authentication solution that verifies your legal identity without requiring file uploads or the over-disclosure of private information.<br><br>
 
 ### Un­der­col­lat­er­al­ized defi lend­ing pro­to­col<br>
-a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access to lower collateralized borrowing opportunities, increasing capital efficiency.<br><br>
+A defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access to lower collateralized borrowing opportunities, increasing capital efficiency.<br><br>
 
 
 
 ### Health­care zk-data mar­ket­place<br>
-a private healthcare data marketplace that allows users to selectively disclose trusted healthcare data to earn rewards.<br><br>
+A private healthcare data marketplace that allows users to selectively disclose trusted healthcare data to earn rewards.<br><br>
 
 
 ### De­cen­tral­ized job mar­ket­place<br>
-a decentralized freelance marketplace that allows users to secure remote work opportunities by privately disclosing some of their trusted data through zkpass. a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access.<br><br>
+A decentralized freelance marketplace that allows users to secure remote work opportunities by privately disclosing some of their trusted data through zkpass. a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access.<br><br>
 
 ### In­sur­ance claims<br>
-generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.<br><br>
+Generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.<br><br>
 
 
 
@@ -109,7 +108,28 @@ The user's sovereign data represents various identities in the Web3 ecosystem, w
 Integrating or building on top of the zkPass Protocol, zkPass Products with unique features will be developed to adapt to specific application scenarios.<br><br>
 
 # How does it handle security and privacy concerns?
- 
+ As centralized organizations in the Web2 world predominantly hold sensitive private data, zkPass has reconstructed the standard TLS protocol. Combining trusted private data in Web2 and Web3 using leading MPC and ZKP technologies, zkPass provides a highly available private data layer for constructing DeSoc. This integrated solution offers a solid foundation for privacy protection.
+
+### Reliability of Private Data Source
+The reliability of the private data source is of utmost importance as it typically originates from centralized organizations such as government agencies, educational institutions, financial institutions, and other authorized entities that issue identification documents and records. These documents and records may include government-issued identification cards, diplomas, transcripts, bank account information, vehicle registration records, and more. To ensure the legitimacy of private data, zkPass verifies that it comes from trusted data sources that undergo a rigorous validation process.<br>
+Furthermore, zkPass provides customizable and flexible templates designed for different users and business scenarios. These templates incorporate an audit mechanism that helps prevent malicious behavior by phishing websites, which aim to steal private data and undermine the reliability of the data source.<br>
+### The Authenticity of Private Data
+Ensuring the authenticity of private data is crucial, and zkPass employs advanced privacy computing techniques to achieve this. It leverages high-performance algorithms such as Oblivious Transfer (OT) and Garbled Circuit (GC) to implement secure Multi-Party Computation (MPC). This approach effectively prevents fraudulent behavior by customers attempting to tamper with their private data locally.<br>
+During each round of identity verification, zkPass randomly assigns a group of zkPass Nodes, forming a client known as the zkPass Kit. The client accesses the trusted data source server using the standard Transport Layer Security (TLS) protocol, overseen by the zkPass Task Smart Contract. This ensures data security, as the zkPass Node only possesses the MacKey Share in the Session Key, which poses no threat to data security. In contrast, the zkPass Kit has the complete EncKey and the other half of the MacKey Share. This approach allows the zkPass Node to promptly detect and reject any fraudulent behavior if a client attempts to tamper with their private data locally.<br>
+By utilizing advanced privacy computing techniques, zkPass ensures the authenticity of private data, making it a highly effective solution for protecting against identity fraud.<br>
+### Privacy of Private Data
+Privacy protection for private data is a top priority for zkPass. After a client's private data is committed, zkPass enables them to generate Zero-Knowledge Proofs (ZKPs) locally. This ensures that zkPass does not expose any privacy-related information. However, this process can be resource-intensive and slow, especially when the client's hardware resources are limited. To address these challenges, zkPass utilizes VOLE-based linear commitment and high-performance IZK algorithms.<br>
+The interactive IZK algorithm eliminates the need for TrustSetup, allowing Provers and Verifiers to directly interact. It generates Vector Oblivious Linear Evaluation (VOLE) and commits to each gate using VOLE, resulting in improved processing efficiency. VOLE's linearity enables batch processing, allowing Provers and Verifiers to compute separately in their respective locations. The results can then be aggregated and verified, significantly enhancing computational efficiency.<br>
+The advanced algorithms employed by zkPass ensure the secure and private handling of clients' private data, even with limited hardware resources. As a result, zkPass provides an effective solution for safeguarding sensitive private information, making it a critical tool for preventing identity theft and fraud.<br>
+### Verifiability of Private Data
+Verifiability is critical to identity data security, and zkPass offers a reliable solution. Once the customer's ZKP is generated, it can be uploaded to the blockchain, enabling anyone to verify their identity by simply calling the zkPass Verification Smartcontract.<br>
+It is worth noting that this process only exposes the verification conditions and does not reveal any private information about the customer, such as whether they meet the access requirement of being over 18 years old. This feature is crucial for customers who want to keep their personal information private. For instance, they may send the ZKP directly to a specific program, enabling them to access the service while keeping their identity private.<br>
+By providing this level of verifiability while maintaining customers' sensitive information private.<br>
+### Private Data Diversity and Interoperability 
+The zkPass protocol generates a zk-based Soul Bound Token (zkSBT) representing the client's unique data in a specific application scenario. The zkPass zkSBT adheres to the ERC-998 standard protocol, and other protocols do not require integration of this type. The SBT is structured as a Hash Tree, with leaves composed of various Claims originating from trusted data sources. zkPass validation occurs in two stages: the mClaim ZK proof verifies that the target field originates from a trusted data source and is within the mClaim Tree, while the qClaim ZK proof verifies that the target field is within the mClaim Tree and satisfies the logical assertion. Type representation includes tSBT (Type, e.g., "I am a car owner") and dSBT (Datasource, e.g., "Mercedes and BMW"). Through the tSBT, an auto alliance DAO can fully identify a car owner's identity and conduct subsequent derivative activities, demonstrating interoperability.<br><br>
+The zkPass protocol supports diverse private data sources, ensuring individuals can securely and efficiently prove their private data in various scenarios. Additionally, the zkPass zkSBT structure, which conforms to the ERC-998 standard protocol, enables interoperability with other systems, facilitating the integration of identity data into various applications. Overall, zkPass provides a comprehensive and secure solution for private data verification in today's digital landscape.
+
+
 # Which protocols it uses and what is it for?
 ZkPass built on with these core protocols: Three-Party TLS (3P-TLS), Multi-party Secure Computation (MPC), and Zero-Knowledge Proof (ZKP).
 
@@ -137,12 +157,12 @@ At this point, the three-party TLS protocol concludes. The MPC algorithm of zkPa
 
 This image shows How interactive zero knowledge proofs Work on zkPass.
 
-The final step of the zkPass protocol involves the client generating zero-knowledge proof, which the smart contract on the blockchain verifies. We employ a Hybrid Zero-Knowledge (ZK) approach that combines both interactive and non-interactive ZK protocols. 
+The final step of the zkPass protocol involves the client generating zero-knowledge proof, which the smart contract on the blockchain verifies. ZkPass employs a Hybrid Zero-Knowledge (ZK) approach that combines both interactive and non-interactive ZK protocols. 
 
 ### Interactive Zero-Knowledge (IZK):
 
-We utilize a VOLE-based interactive Zero-Knowledge (ZK) protocol, which we refer to as VOLE-ZK 23. This protocol plays a crucial role in authentication, ensuring the data's origin from the precise data source and safeguarding it against tampering by clients. The VOLE-ZK 23 protocol can be described as a "commit and prove" framework. In this setup, both the Prover (P) and the Verifier (V) jointly generate numerous VOLE instances, each satisfying a linear formula denoted as "m = k + w * delta." P holds certain components of this formula as a commitment, with 'm' serving as the commitment, and 'w' can be converted into a witness after derandomization. 
-On the other hand, V holds the remaining components ('k' and 'delta'). The objective is to prove and verify the satisfaction of a boolean circuit. P establishes a commitment for every gate based on the VOLE instance. Since the correlation between VOLE instances is linear, we can batch-check the results by summing up all commitments and confirming whether the final result still adheres to the correlation. This linearity is a key reason our solution is cost-effective, setting it apart from other high-degree polynomial solutions like SNARK. Consequently, P only needs to transmit two field elements (the sum of 'm' and the sum of 'w') to the Verifier. To protect sensitive information, a random linear combination can be created. V then validates the correlation using its VOLE parameters ('k' and 'delta').
+ZkPass utilize a VOLE-based interactive Zero-Knowledge (ZK) protocol, which referred as VOLE-ZK 23. This protocol plays a crucial role in authentication, ensuring the data's origin from the precise data source and safeguarding it against tampering by clients. The VOLE-ZK 23 protocol can be described as a "commit and prove" framework. In this setup, both the Prover (P) and the Verifier (V) jointly generate numerous VOLE instances, each satisfying a linear formula denoted as "m = k + w * delta." P holds certain components of this formula as a commitment, with 'm' serving as the commitment, and 'w' can be converted into a witness after derandomization. 
+On the other hand, V holds the remaining components ('k' and 'delta'). The objective is to prove and verify the satisfaction of a boolean circuit. P establishes a commitment for every gate based on the VOLE instance. Since the correlation between VOLE instances is linear, ZkPass can batch-check the results by summing up all commitments and confirming whether the final result still adheres to the correlation. This linearity is a key reason of ZkPass's solution is cost-effective, setting it apart from other high-degree polynomial solutions like SNARK. Consequently, P only needs to transmit two field elements (the sum of 'm' and the sum of 'w') to the Verifier. To protect sensitive information, a random linear combination can be created. V then validates the correlation using its VOLE parameters ('k' and 'delta').
 There are five main constraints at this stage:
 The vector x = (Q', R', mac_key_pv, b) represents the public signal, and w = (enc_key, token, Q, R) is the witness.
 
