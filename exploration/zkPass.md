@@ -52,22 +52,22 @@ Eyl 2003 - Haz 2007
 The provided use cases by the zkPass:
 
 ### ZkKYC<br>
-an decentralized authentication solution that verifies your legal identity without requiring file uploads or the over-disclosure of private information.
+an decentralized authentication solution that verifies your legal identity without requiring file uploads or the over-disclosure of private information.<br><br>
 
 ### Un­der­col­lat­er­al­ized defi lend­ing pro­to­col<br>
-a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access to lower collateralized borrowing opportunities, increasing capital efficiency.
+a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access to lower collateralized borrowing opportunities, increasing capital efficiency.<br><br>
 
 
 
 ### Health­care zk-data mar­ket­place<br>
-a private healthcare data marketplace that allows users to selectively disclose trusted healthcare data to earn rewards.
+a private healthcare data marketplace that allows users to selectively disclose trusted healthcare data to earn rewards.<br><br>
 
 
 ### De­cen­tral­ized job mar­ket­place<br>
-a decentralized freelance marketplace that allows users to secure remote work opportunities by privately disclosing some of their trusted data through zkpass. a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access.
+a decentralized freelance marketplace that allows users to secure remote work opportunities by privately disclosing some of their trusted data through zkpass. a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access.<br><br>
 
 ### In­sur­ance claims<br>
-generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.
+generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.<br><br>
 
 
 
