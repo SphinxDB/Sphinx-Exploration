@@ -217,7 +217,8 @@ The final constraint signifies that the data contained within R must adhere to s
 
 # How much is it related with Sphinx?
 
-At Protocol Layer Sphinx and ZkPass uses TLS and ZKP in common. ZkPass uses a reconstructed version of TLS called 3P-TLS
+At Protocol Layer Sphinx and ZkPass uses TLS and ZKP in common. ZkPass uses a reconstructed version of TLS called 3P-TLS. 
+ZkPass uses interactive ZK's
 
 
 ## Resources
