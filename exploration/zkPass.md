@@ -24,63 +24,49 @@ Total Funding: $2.5M
 
 There are two co-founder of ZkPass
 
-Joshua Peng, Co-Founder at ZkPass:
-
+Joshua Peng, Co-Founder at ZkPass:<br>
 [Joshua P Linkedin](https://www.linkedin.com/in/joshua-p-466504257/ "Joshua P Linkedin")
 
-Education:
-University of Missouri-Columbia
-
-Doctor of Philosophy - PhD, Structural Engineering
-
+Education:<br>
+University of Missouri-Columbia<br>
+Doctor of Philosophy - PhD, Structural Engineering<br>
 Oca 2012 - Tem 2015
 
 
 
-Bing J, Co-Founder at ZkPass:
-
-[Bing J Linkedin](https://www.linkedin.com/in/zkbing/ "Bing J Linkedin")
-
-Education:
+Bing J, Co-Founder at ZkPass:<br>
+[Bing J Linkedin](https://www.linkedin.com/in/zkbing/ "Bing J Linkedin")<br>
+Education:<br>
 南开大学南开大学<br>
 Master's degree, Software Engineering<br>
-Eyl 2007 - Haz 2010
+Eyl 2007 - Haz 2010<br>
 
 
-南开大学南开大学
-
-Bachelor's degree, Software Engineering
-
+南开大学南开大学<br>
+Bachelor's degree, Software Engineering<br>
 Eyl 2003 - Haz 2007
-
 
 
 # Who are using ZkPass?
 
 The provided use cases by the zkPass:
 
-### ZkKYC
-
-
+### ZkKYC<br>
 an decentralized authentication solution that verifies your legal identity without requiring file uploads or the over-disclosure of private information.
 
-### Un­der­col­lat­er­al­ized defi lend­ing pro­to­col
-
-
+### Un­der­col­lat­er­al­ized defi lend­ing pro­to­col<br>
 a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access to lower collateralized borrowing opportunities, increasing capital efficiency.
 
 
 
-### Health­care zk-data mar­ket­place
+### Health­care zk-data mar­ket­place<br>
 a private healthcare data marketplace that allows users to selectively disclose trusted healthcare data to earn rewards.
 
 
-### De­cen­tral­ized job mar­ket­place
+### De­cen­tral­ized job mar­ket­place<br>
 a decentralized freelance marketplace that allows users to secure remote work opportunities by privately disclosing some of their trusted data through zkpass. a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access.
 
-### In­sur­ance claims
-
-
+### In­sur­ance claims<br>
 generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.
 
 
