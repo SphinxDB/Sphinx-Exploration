@@ -18,7 +18,7 @@ Location: Sydney, Australia
 
 Company Stage: Seed
 
-Total Funding: $2.5M
+Total Funding: $2.5M<br><br>
 
 # Who created ZkPass?
 
@@ -43,7 +43,7 @@ Eyl 2007 - Haz 2010<br>
 
 南开大学南开大学<br>
 Bachelor's degree, Software Engineering<br>
-Eyl 2003 - Haz 2007
+Eyl 2003 - Haz 2007<br><br>
 
 
 # Why should we use ZkPass?
@@ -76,12 +76,12 @@ Currently, in order to use zkpass, users need to download an extension called [Z
 ZkPass currently at pre-alpha stage. This image shows zkpass app dashboard.<br>
 Templates show possible zkSBT's like having an instagram account over 100 followers.<br>
 For this instance, there are 3 main steps for an user to proof his/her instagram account has over 100 followers and mint corresponding zero knowledge soul bound token:
-- 1. User need to chose a field that want to Verify
+1. User need to chose a field that want to Verify
     There are some trusted datasource offered in zkpass default template, user should chose and fill in the statement.<br> Moreover, ZkPass encourage users to apply more datasource and template by contributor programme.
-- 2. Access to your datasource
+2. Access to your datasource
     After Installing zkSBT tool kit, user will be asked to login his/her account to the specific website.
-- 3. Verify & Mint zkSBT
-    The field user would like to prove will be mint as a SBT by multi-party computing & zero-knowledge proof.
+3. Verify & Mint zkSBT
+    The field user would like to prove will be mint as a SBT by multi-party computing & zero-knowledge proof.<br><br>
 
 
 # What is ZkPass Architecture?
@@ -133,7 +133,7 @@ It is worth noting that this process only exposes the verification conditions an
 By providing this level of verifiability while maintaining customers' sensitive information private.<br>
 ### Private Data Diversity and Interoperability 
 The zkPass protocol generates a zk-based Soul Bound Token (zkSBT) representing the client's unique data in a specific application scenario. The zkPass zkSBT adheres to the ERC-998 standard protocol, and other protocols do not require integration of this type. The SBT is structured as a Hash Tree, with leaves composed of various Claims originating from trusted data sources. zkPass validation occurs in two stages: the mClaim ZK proof verifies that the target field originates from a trusted data source and is within the mClaim Tree, while the qClaim ZK proof verifies that the target field is within the mClaim Tree and satisfies the logical assertion. Type representation includes tSBT (Type, e.g., "I am a car owner") and dSBT (Datasource, e.g., "Mercedes and BMW"). Through the tSBT, an auto alliance DAO can fully identify a car owner's identity and conduct subsequent derivative activities, demonstrating interoperability.<br><br>
-The zkPass protocol supports diverse private data sources, ensuring individuals can securely and efficiently prove their private data in various scenarios. Additionally, the zkPass zkSBT structure, which conforms to the ERC-998 standard protocol, enables interoperability with other systems, facilitating the integration of identity data into various applications. Overall, zkPass provides a comprehensive and secure solution for private data verification in today's digital landscape.
+The zkPass protocol supports diverse private data sources, ensuring individuals can securely and efficiently prove their private data in various scenarios. Additionally, the zkPass zkSBT structure, which conforms to the ERC-998 standard protocol, enables interoperability with other systems, facilitating the integration of identity data into various applications. Overall, zkPass provides a comprehensive and secure solution for private data verification in today's digital landscape.<br><br>
 
 
 # Which protocols it uses and what is it for?
@@ -186,14 +186,39 @@ R stands for the decrypted response. It's crucial for the zkPass protocol to ens
 
 b = Assert(R)
 
-The final constraint signifies that the data contained within R must adhere to specific conditions outlined in the template. For instance, if R is structured as a JSON object like {user: xxx, age: 30}, it necessitates that the "age" property must have a value greater than 18. In simpler terms, this constraint ensures that the data inside R complies with predetermined criteria.
+The final constraint signifies that the data contained within R must adhere to specific conditions outlined in the template. For instance, if R is structured as a JSON object like {user: xxx, age: 30}, it necessitates that the "age" property must have a value greater than 18. In simpler terms, this constraint ensures that the data inside R complies with predetermined criteria.<br><br>
 
 
 # Advantages of using ZkPass
 
+- Privacy Protection: zkPass employs a combination of Multi-Party Computation (MPC), Zero-Knowledge Proofs (ZKP), and Three-Party Transport Layer Security (3P-TLS) to ensure that users can verify their data without revealing sensitive information. This robust privacy protection is crucial in an era where data breaches and privacy concerns are prevalent.
+
+- Secure Data Verification: The use of advanced cryptographic techniques, including MPC and ZKP, ensures secure data verification. Users can prove the authenticity of their data without exposing the actual data itself, preventing unauthorized access and tampering.
+
+- Diverse Use Cases: zkPass offers a range of use cases, such as decentralized authentication (ZkKYC), decentralized job marketplace, insurance claims processing, healthcare data marketplace, and undercollateralized DeFi lending. This versatility makes zkPass applicable in various industries and scenarios.
+
+- Flexible Templates and Customization: zkPass provides users with templates and encourages the application of additional data sources through its contributor program. This flexibility allows users to adapt zkPass to their specific needs and scenarios.
+
+- Reliability of Private Data Source: zkPass verifies the reliability of private data sources through a rigorous validation process. This helps ensure that the data used for verification comes from trusted and authorized entities, reducing the risk of using false or manipulated information.
+
+- Verifiability of Private Data: zkPass enables users to verify their identity without revealing specific details. The zero-knowledge proofs can be uploaded to the blockchain, allowing anyone to verify the identity without exposing sensitive information.<br><br>
+
 # Disadvantages of using ZkPass
 
+- Complex Implementation: The use of advanced cryptographic protocols like MPC and ZKP can make zkPass complex to implement and understand. Users and developers may require a deep understanding of cryptography to effectively use and contribute to the protocol.
+
+- Resource Intensiveness: Generating Zero-Knowledge Proofs (ZKPs) locally, as mentioned in the architecture, can be resource-intensive and slow, especially on hardware with limited capabilities. This could impact the user experience, particularly in scenarios with constrained computing resources.
+
+- Dependency on Trusted Data Sources: The reliability of zkPass relies on the trustworthiness of the private data sources. If these sources are compromised or provide inaccurate information, it could undermine the effectiveness of zkPass in ensuring the authenticity of private data.
+
+- Adoption Challenges: Adoption of zkPass may face challenges due to the need for users to download and use specific extensions (e.g., ZkPass Transgate). Achieving widespread adoption may require overcoming barriers related to user awareness and willingness to adopt new tools.
+
+- Regulatory Considerations: The use of zkPass for identity verification and data processing may face regulatory challenges, especially in regions with stringent data privacy and security regulations. Ensuring compliance with these regulations is crucial for widespread acceptance.<br><br>
+
 # How much is it related with Sphinx?
+
+At Protocol Layer Sphinx and ZkPass uses TLS and ZKP in common. ZkPass uses a reconstructed version of TLS called 3P-TLS
+
 
 ## Resources
 
