@@ -3,7 +3,7 @@
 ---
 ![ZkPass](https://miro.medium.com/v2/resize:fit:1400/0*rEP3jNq_iFcw64gJ.png "ZkPass")
 
-## What is ZkPass briefly?
+# What is ZkPass briefly?
 
 Zkpass is a privacy protocol for private data based on Multi-Party Computation (MPC), Zero-Knowledge Proofs (ZKP), and three-party Transport Layer Security (3P-TLS) to provide privacy-preserving data verification solutions. ZkPass's mission to empower users to validate their data without compromising their privacy. Main use cases of zkpass depends on verifying your real-world private data without revealing private details.
 
@@ -20,7 +20,7 @@ Company Stage: Seed
 
 Total Funding: $2.5M
 
-## Who created ZkPass?
+# Who created ZkPass?
 
 There are two co-founder of ZkPass
 
@@ -57,57 +57,56 @@ Eyl 2003 - Haz 2007
 
 
 
-## Who are using ZkPass?
+# Who are using ZkPass?
 
 The provided use cases by the zkPass:
 
-### ZkKYC
+#### ZkKYC
 
 
 an decentralized authentication solution that verifies your legal identity without requiring file uploads or the over-disclosure of private information.
 
-### Un­der­col­lat­er­al­ized defi lend­ing pro­to­col
+#### Un­der­col­lat­er­al­ized defi lend­ing pro­to­col
 
 
 a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access to lower collateralized borrowing opportunities, increasing capital efficiency.
 
 
 
-### Health­care zk-data mar­ket­place
+#### Health­care zk-data mar­ket­place
 
 
 a private healthcare data marketplace that allows users to selectively disclose trusted healthcare data to earn rewards.
 
 
-### De­cen­tral­ized job mar­ket­place
+#### De­cen­tral­ized job mar­ket­place
 
 
 a decentralized freelance marketplace that allows users to secure remote work opportunities by privately disclosing some of their trusted data through zkpass. a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access.
 
-### In­sur­ance claims
+#### In­sur­ance claims
 
 
 generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.
 
 
 
-## Why should we use ZkPass?
+# Why should we use ZkPass?
 
-## Advantages of using ZkPass
+# Advantages of using ZkPass
 
+# Disadvantages of using ZkPass
 
-## Disadvantages of using ZkPass
+# How much is it related with Sphinx?
 
-## How much is it related with Sphinx?
+# How does ZkPass work?
 
-## How does ZkPass work?
-
-## How does it handle security and privacy concerns?
+# How does it handle security and privacy concerns?
  
-## Which protocols it uses and what is it for?
+# Which protocols it uses and what is it for?
 ZkPass built on with these core protocols: Three-Party TLS (3P-TLS), Multi-party Secure Computation (MPC), and Zero-Knowledge Proof (ZKP).
 
-### MPC
+#### MPC
 
 
 Multi-party Computation (MPC) has its origins in the millionaire problem, which was proposed by Andrew Yao in 1982. MPC enables participants to collectively compute a function using their private inputs without revealing the inputs themselves. Even if one or more parties are compromised during the computation, MPC ensures the confidentiality of the participants' original secret data and guarantees the accuracy of the function's output.
@@ -118,7 +117,7 @@ The zkPass Protocol requires a significant number of bitwise operations. As a re
 
 This image shows How 3P-TLS & MPC Work on zkPass.
 
-### 3P-TLS
+#### 3P-TLS
 
 In the 3P-TLS protocol, there are three key players: S, who serves as a trusted data source, P, the Prover/user, and V, the zkPass node. P and V collaborate as a client to establish secure communication with S through a series of stages.
 The first stage involves a three-party handshake protocol. Here, P, V, and S collectively generate session keys. P and V each obtain a share of these keys. This is achieved using the Paillier encryption algorithm, which offers additive homomorphism. The pre-master key is divided into two parts, with P and V receiving one-half each, while S retains the complete pre-master key. Importantly, to prevent the client from forging fake websites, after the Client and Server exchange greetings, the Client will ask the Server to return the certificate. The subsequent key exchange phase also includes the server’s public key signature, which is signed by the private key of the certificate. This allows V within the Client to also obtain the certificate and signature for verification, ensuring trust in the data source.
@@ -133,7 +132,7 @@ This image shows How interactive zero knowledge proofs Work on zkPass.
 
 The final step of the zkPass protocol involves the client generating zero-knowledge proof, which the smart contract on the blockchain verifies. We employ a Hybrid Zero-Knowledge (ZK) approach that combines both interactive and non-interactive ZK protocols. 
 
-### Interactive Zero-Knowledge (IZK):
+#### Interactive Zero-Knowledge (IZK):
 
 We utilize a VOLE-based interactive Zero-Knowledge (ZK) protocol, which we refer to as VOLE-ZK 23. This protocol plays a crucial role in authentication, ensuring the data's origin from the precise data source and safeguarding it against tampering by clients. The VOLE-ZK 23 protocol can be described as a "commit and prove" framework. In this setup, both the Prover (P) and the Verifier (V) jointly generate numerous VOLE instances, each satisfying a linear formula denoted as "m = k + w * delta." P holds certain components of this formula as a commitment, with 'm' serving as the commitment, and 'w' can be converted into a witness after derandomization. 
 On the other hand, V holds the remaining components ('k' and 'delta'). The objective is to prove and verify the satisfaction of a boolean circuit. P establishes a commitment for every gate based on the VOLE instance. Since the correlation between VOLE instances is linear, we can batch-check the results by summing up all commitments and confirming whether the final result still adheres to the correlation. This linearity is a key reason our solution is cost-effective, setting it apart from other high-degree polynomial solutions like SNARK. Consequently, P only needs to transmit two field elements (the sum of 'm' and the sum of 'w') to the Verifier. To protect sensitive information, a random linear combination can be created. V then validates the correlation using its VOLE parameters ('k' and 'delta').
