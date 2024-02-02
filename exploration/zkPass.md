@@ -46,7 +46,7 @@ Bachelor's degree, Software Engineering<br>
 Eyl 2003 - Haz 2007
 
 
-# Who are using ZkPass?
+# Why should we use ZkPass?
 
 The provided use cases by the zkPass:
 
@@ -68,15 +68,13 @@ A decentralized freelance marketplace that allows users to secure remote work op
 ### In­sur­ance claims<br>
 Generate zero-knowledge proofs from private data during a web session and submit them to a smart contract for insurance policy eligibility verification, enabling automatic claim settlement without the need for manual review.<br><br>
 
+# Who are using ZkPass?
 
+Currently, in order to use zkpass, users need to download an extension called [ZkPass Transgate](https://chromewebstore.google.com/detail/zkpass-transgate/afkoofjocpbclhnldmmaphappihehpma?utm_source=ext_app_menu "ZkPass Transgate").
 
-# Why should we use ZkPass?
+![ZkPass Dashboard](https://miro.medium.com/v2/resize:fit:1400/1*lDtRjHstbVnD3-2BIjgWuA.png  "ZkPass Dashboard")
+This is zkpass dashboard 
 
-# Advantages of using ZkPass
-
-# Disadvantages of using ZkPass
-
-# How much is it related with Sphinx?
 
 # How does ZkPass work?
 ![ZkPass Overall Architecture](https://2254424488-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FC2Jh1oquOpJPfwzD3x9L%2Fuploads%2FLMF0EDjIw8EJM71LSmnD%2FOverall%20Architecture%20-%20zkPass%20(1).png?alt=media&token=e78e6e3c-aa78-4de2-88bf-00e68ce5b6e5  "ZkPass Overall Architecture")
@@ -182,6 +180,12 @@ b = Assert(R)
 
 The final constraint signifies that the data contained within R must adhere to specific conditions outlined in the template. For instance, if R is structured as a JSON object like {user: xxx, age: 30}, it necessitates that the "age" property must have a value greater than 18. In simpler terms, this constraint ensures that the data inside R complies with predetermined criteria.
 
+
+# Advantages of using ZkPass
+
+# Disadvantages of using ZkPass
+
+# How much is it related with Sphinx?
 
 ## Resources
 
