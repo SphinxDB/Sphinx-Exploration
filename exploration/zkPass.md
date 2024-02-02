@@ -42,10 +42,8 @@ Bing J, Co-Founder at ZkPass:
 [Bing J Linkedin](https://www.linkedin.com/in/zkbing/ "Bing J Linkedin")
 
 Education:
-南开大学南开大学
-
-Master's degree, Software Engineering
-
+南开大学南开大学<br>
+Master's degree, Software Engineering<br>
 Eyl 2007 - Haz 2010
 
 
@@ -74,14 +72,10 @@ a defi lending protocol combining on-chain and off-chain credit allows users to 
 
 
 ### Health­care zk-data mar­ket­place
-
-
 a private healthcare data marketplace that allows users to selectively disclose trusted healthcare data to earn rewards.
 
 
 ### De­cen­tral­ized job mar­ket­place
-
-
 a decentralized freelance marketplace that allows users to secure remote work opportunities by privately disclosing some of their trusted data through zkpass. a defi lending protocol combining on-chain and off-chain credit allows users to selectively verify their on-chain and off-chain reputations have access.
 
 ### In­sur­ance claims
