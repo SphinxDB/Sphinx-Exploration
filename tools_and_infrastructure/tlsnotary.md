@@ -1,8 +1,10 @@
-# TLS Notary
----
+
 
 ![TLS Notary align="left"](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Sg3rZyhgMiVaVT_mkfNRfjcv6PiGZIHpHg&usqp=CAU "TLS Notary")
 
+# TLS Notary
+---
+<br>
 # What is TLS Notary briefly?
 
 Data Provenance without Compromising Privacy, That is Why!
@@ -70,8 +72,25 @@ In 2022, TLSNotary was rebuilt from the ground up in Rust incorporating state-of
 
 Older versions of TLSNotary, including PageSigner, have been archived due to a security vulnerability<br>
 
+# Advantages of using TLSNotary
 
+- Data Provenance with Privacy: TLS Notary allows users to prove the authenticity of data without compromising privacy. It enables selective disclosure of information, preserving user privacy while still providing cryptographic proof of data origin.
 
+- Secure Multi-Party Computation (MPC): By employing MPC techniques, TLS Notary ensures that neither the Verifier nor the Prover can see the plaintext data during transmission, maintaining the integrity of the process.
+
+- Selective Disclosure: Users have control over which parts of the data they disclose to the Verifier, allowing them to redact sensitive information while still proving the authenticity of the remaining data.
+
+# Disadvantages of using TLSNotary
+
+- Dependence on Trust: Verifiers must trust the Notary to accept the signed data. If there are concerns about the integrity or trustworthiness of the Notary, it could undermine the reliability of the verification process.
+
+- Complexity: Implementing TLS Notary may introduce complexity into systems and applications, particularly in integrating with existing infrastructure and ensuring proper handling of cryptographic operations.
+
+- Limited TLS Version Support: As of the provided information, TLS Notary supports TLS 1.2, with plans to add support for TLS 1.3 in the future. This limitation may restrict its compatibility with systems that rely on newer TLS versions.
+
+- Not Suitable for All Use Cases: While TLS Notary is versatile, it may not be suitable for every use case, particularly those requiring real-time or continuous verification of data authenticity.
+
+Overall, TLS Notary offers a promising solution for privacy-preserving data provenance, but careful consideration of its implementation and suitability for specific use cases is essential.
 
 
 ## Resources
