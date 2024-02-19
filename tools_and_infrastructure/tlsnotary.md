@@ -6,11 +6,17 @@
 # What is TLS Notary briefly?
 
 Data Provenance without Compromising Privacy, is the main goal of the TLS notary.<br>
-The Internet currently lacks effective, privacy-preserving Data Provenance. TLS, also known as the "s" in "https" 🔐 to the general public, ensures that data can be securely communicated between a server and a user. But how can this user credibly share this data with another user or server without compromising security, privacy, and control?
+The Internet currently lacks effective, privacy-preserving Data Provenance. TLS, also known as the "s" in "https" 🔐 to the general public, ensures that data can be securely communicated between a server and a user and with TLS notary this user credibly share this data with another user or server without compromising security, privacy, and control<br>
 
-Enter TLSNotary: a protocol enabling users to export data securely from any website. Using Zero Knowledge Proof (ZKP) technology, this data can be selectively shared with others in a cryptographically verifiable manner.
+TLSNotary: a protocol enabling users to export data securely from any website. Using Zero Knowledge Proof (ZKP) technology, this data can be selectively shared with others in a cryptographically verifiable manner.<br>
+TLSNotary makes data truly portable and allows a user, the Prover, to share it with another party, the Verifier, as they see fit.<br>
+TLSNotary leverages the widely-used TLS (Transport Layer Security) protocol to securely and privately prove a transcript of communications took place with a webserver.<br>
+The core of the TLSNotary protocol involves splitting TLS session keys between two parties, the Prover and the Verifier. Through secure multi-party computation (MPC), the Prover's requests to a TLS-enabled webserver are encrypted and authenticated.<br>
+During the protocol neither the Prover nor Verifier are in possession of the full TLS session keys, they only hold respective shares of those keys. This preserves the security properties of TLS while enabling the Prover to prove the authenticity of the communication to the Verifier.<br>
+All of this is achieved while maintaining full privacy. The unencrypted communications remain hidden to the Verifier, and optionally the identity of the server can remain private as well.<br>
+Moreover, our protocol operates transparently to the webserver. In fact, the webserver remains unaware that this process is taking place.<br>
 
-TLSNotary makes data truly portable and allows a user, the Prover, to share it with another party, the Verifier, as they see fit.
+Since the validation of the TLS traffic neither reveals anything about the plaintext of the TLS session nor about the Server, it is possible to outsource the MPC-TLS verification to a general-purpose TLS verifier, which we term a Notary. This Notary can sign (aka notarize) the data, making it portable in a privacy preserving way.<br>
 
 # How Does the TLSNotary Protocol Work?
 The TLSNotary protocol consists of 3 steps:
