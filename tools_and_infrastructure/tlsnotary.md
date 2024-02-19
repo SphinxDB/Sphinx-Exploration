@@ -1,10 +1,8 @@
 
-
-![TLS Notary align="left"](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Sg3rZyhgMiVaVT_mkfNRfjcv6PiGZIHpHg&usqp=CAU "TLS Notary")
-
 # TLS Notary
 ---
-<br>
+![TLS Notary align="left"](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Sg3rZyhgMiVaVT_mkfNRfjcv6PiGZIHpHg&usqp=CAU "TLS Notary")
+
 # What is TLS Notary briefly?
 
 Data Provenance without Compromising Privacy, That is Why!
@@ -97,5 +95,8 @@ Overall, TLS Notary offers a promising solution for privacy-preserving data prov
 
 - [TLS Notary](https://tlsnotary.org/ "TLS Notary") Feb 2024
 - [TLS Notary/Docs](https://docs.tlsnotary.org/intro.html "TLS Notary Docs") Feb 2024
+- [TLS Notary/Docs/Verification](https://docs.tlsnotary.org/protocol/verification.html "TLS Notary Verification") Feb 2024
+- [TLS Notary/Github](https://github.com/tlsnotary/tlsn "TLS Notary Github") Feb 2024
+- [TLS Notary/Api](https://tlsnotary.github.io/tlsn/tlsn_prover/ "TLS Notary Api") Feb 2024
 
 
