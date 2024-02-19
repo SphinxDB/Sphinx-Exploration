@@ -5,7 +5,7 @@
 
 # What is TLS Notary briefly?
 
-Data Provenance without Compromising Privacy, That is Why!
+Data Provenance without Compromising Privacy, is the main goal of the TLS notary.<br>
 The Internet currently lacks effective, privacy-preserving Data Provenance. TLS, also known as the "s" in "https" 🔐 to the general public, ensures that data can be securely communicated between a server and a user. But how can this user credibly share this data with another user or server without compromising security, privacy, and control?
 
 Enter TLSNotary: a protocol enabling users to export data securely from any website. Using Zero Knowledge Proof (ZKP) technology, this data can be selectively shared with others in a cryptographically verifiable manner.
