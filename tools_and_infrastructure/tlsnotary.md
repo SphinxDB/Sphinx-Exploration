@@ -1,7 +1,7 @@
 # TLS Notary
 ---
 
-![TLS Notary](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Sg3rZyhgMiVaVT_mkfNRfjcv6PiGZIHpHg&usqp=CAU "TLS Notary")
+![TLS Notary align="left"](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Sg3rZyhgMiVaVT_mkfNRfjcv6PiGZIHpHg&usqp=CAU "TLS Notary")
 
 # What is TLS Notary briefly?
 
@@ -33,6 +33,42 @@ This capability can be paired with Zero-Knowledge Proofs to prove properties of 
 
 ③ Data Verification<br>
 The Verifier now validates the proof received from the Prover. The data origin can be verified by inspecting the Server certificate through trusted certificate authorities (CAs). The Verifier can now make assertions about the non-redacted content of the transcript.<br>
+
+# TLS verification with a general-purpose Notary
+Since the validation of the TLS traffic neither reveals anything about the plaintext of the TLS session nor about the Server, it is possible to outsource the MPC-TLS verification ① to a general-purpose TLS verifier, which we term a Notary. This Notary can sign (aka notarize) ② the data, making it portable. The Prover can then take this signed data and selectively disclose ③ sections to an application-specific Verifier, who then verifies the data ④.
+
+
+![TLS Notary  ](https://docs.tlsnotary.org/diagrams/overview_notary.svg "TLS Notary  ")
+
+
+In this setup, the Notary cryptographically signs commitments to the data and the server's identity. The Prover can store this signed data, redact it, and share it with any Verifier as they see fit, making the signed data both reusable and portable.<br><br>
+
+Verifiers will only accept the signed data if they trust the Notary. A data Verifier can also require signed data from multiple Notaries to rule out collusion between the Prover and a Notary.<br><br>
+
+# What Can TLSNotary Do?
+TLSNotary can be used for various purposes. For example, you can use TLSNotary to prove that:<br><br>
+
+- you have access to an account on a web platform
+- a website showed specific content on a certain date
+- you have private information about yourself (address, birth date, health, etc.)
+- you have received a money transfer using your online banking account without revealing your login credentials or sensitive financial information
+- you received a private message from someone
+- you purchased an item online
+- you were blocked from using an app
+- you earned professional certificates<br>
+While TLSNotary can notarize publicly available data, it does not solve the "oracle problem". For this use case, existing oracle solutions are more suitable.<br><br>
+
+# What TLS version does TLSNotary support?
+TLSNotary currently supports TLS 1.2. TLS 1.3 support will be added in 2024.<br><br>
+
+# Who is behind TLSNotary?
+TLSNotary is developed by the Privacy and Scaling Exploration (PSE) research lab of the Ethereum Foundation. The PSE team is committed to conceptualizing and testing use cases for cryptographic primitives.<br><br>
+
+TLSNotary is not a new project; in fact, it has been around for more than a decade.<br><br>
+
+In 2022, TLSNotary was rebuilt from the ground up in Rust incorporating state-of-the-art cryptographic protocols.<br>This renewed version of the TLSNotary protocol offers enhanced security, privacy, and performance.<br><br>
+
+Older versions of TLSNotary, including PageSigner, have been archived due to a security vulnerability<br>
 
 
 
