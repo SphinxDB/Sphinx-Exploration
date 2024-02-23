@@ -6,18 +6,18 @@ Sphinx protocol is a decentralized layer 3 (on Starknet) user based privacy pres
 
 # Table of Contents
 
-[1. What is changed on Sphinx Protocol?](#1-what-is-changed-on-sphinx-protocol)
-[2. General Overview of Sphinx Protocol](#2-general-overview-of-sphinx-protocol)
-[3. Architecture of Sphinx Protocol](#3-architecture-of-sphinx-protocol)
-[4. What is the Current Stage of Sphinx Protocol?](#4-what-is-the-current-stage-of-sphinx-protocol)
-[4.1. Reports](#41-reports)
-[5. Development Phases of Sphinx Protocol](#5-development-phases-of-sphinx-protocol)
-[5.1. Stage 1: Implementation of tlsnotary](#51-stage-1-implementation-of-tlsnotary)
-[5.2. Stage 2: Implementation of writing data to StarkNet](#52-stage-2-implementation-of-writing-data-to-starknet)
-[5.3. Stage 3: Implementation of user request to the node](#53-stage-3-implementation-of-user-request-to-the-node)
-[5.4. Stage 4: Implementation of the consensus protocol](#54-stage-4-implementation-of-the-consensus-protocol)
-[5.5. Stage 5: Implementation of writing data to other chains](#55-stage-5-implementation-of-writing-data-to-other-chains)
-[6. Conclusion](#6-conclusion)
+[1. What is changed on Sphinx Protocol?](#1-what-is-changed-on-sphinx-protocol)  
+[2. General Overview of Sphinx Protocol](#2-general-overview-of-sphinx-protocol)  
+[3. Architecture of Sphinx Protocol](#3-architecture-of-sphinx-protocol)  
+[4. What is the Current Stage of Sphinx Protocol?](#4-what-is-the-current-stage-of-sphinx-protocol)  
+[4.1. Reports](#41-reports)  
+[5. Development Phases of Sphinx Protocol](#5-development-phases-of-sphinx-protocol)  
+[5.1. Stage 1: Implementation of tlsnotary](#51-stage-1-implementation-of-tlsnotary)  
+[5.2. Stage 2: Implementation of writing data to StarkNet](#52-stage-2-implementation-of-writing-data-to-starknet)  
+[5.3. Stage 3: Implementation of user request to the node](#53-stage-3-implementation-of-user-request-to-the-node)  
+[5.4. Stage 4: Implementation of the consensus protocol](#54-stage-4-implementation-of-the-consensus-protocol)  
+[5.5. Stage 5: Implementation of writing data to other chains](#55-stage-5-implementation-of-writing-data-to-other-chains)  
+[6. Conclusion](#6-conclusion)  
 [7. Core Team](#7-core-team)
 
 ## 1. What is changed on Sphinx Protocol?
